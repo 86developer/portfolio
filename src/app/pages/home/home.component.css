@@ -1,0 +1,110 @@
+/* Fondo y tipografía */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #151535;
+  color: #fff;
+}
+
+/* Contenedor principal */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 3rem auto;
+  padding: 2rem;
+  max-width: 900px;
+}
+
+.profile-section {
+  position: relative;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid #ffc400;
+}
+
+.status {
+  position: absolute;
+  top: 10px;
+  right: -10px;
+  background-color: #4caf50;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.8rem;
+  border-radius: 12px;
+}
+
+.intro-section h1 {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  color: #ffc400;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.description span {
+  color: #ffc400;
+  font-weight: bold;
+}
+
+.buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-primary {
+  background-color: #ffc400;
+  color: #1e1e2f;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #e0a700;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #ffc400;
+  border: 2px solid #ffc400;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: #ffc400;
+  color: #1e1e2f;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .home-container {
+    padding: 1rem;
+  }
+
+  .intro-section h1 {
+    font-size: 2rem;
+  }
+
+  .profile-image {
+    width: 100px;
+    height: 100px;
+  }
+}

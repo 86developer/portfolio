@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+/* styles.css */
+
+body {
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  margin: 0 auto; /* centra el contenido */
+  max-width: 1200px; /* ancho máximo para escritorio */
+  padding: 0 16px; /* márgenes laterales */
+}
+h1,
+h2,
+p {
+  color: rgb(153, 151, 147);
+}
+
+.nav a {
+  font-family: "Roboto", sans-serif;
+  color: rgb(153, 151, 147);
+}
+
+:host ::ng-deep .nav a {
+  font-family: "Roboto", sans-serif;
+  color: rgb(153, 151, 147);
+}
+.active {
+  font-weight: bold;
+  color: #007bff;
+}

@@ -1,0 +1,37 @@
+/* Estilos para la barra de navegación */
+.nav {
+  display: flex; /* Usamos flexbox para centrar los elementos */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+  background-color: #333; /* Fondo oscuro para la navbar */
+  padding: 10px 0; /* Espaciado en la parte superior e inferior */
+}
+
+nav ul {
+  list-style-type: none; /* Elimina los puntos de lista */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Utilizamos flexbox para que los elementos de lista estén en línea */
+}
+
+nav ul li {
+  margin: 0 20px; /* Espaciado entre los elementos de la lista */
+}
+
+nav a {
+  text-decoration: none; /* Elimina el subrayado */
+  color: rgb(153, 151, 147); /* Color del texto */
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px; /* Tamaño de la fuente */
+  transition: color 0.3s ease; /* Transición para el color al pasar el ratón */
+}
+
+nav a:hover {
+  color: #007bff; /* Cambia el color cuando se pasa el ratón */
+}
+
+.active {
+  font-weight: bold; /* Negrita para el enlace activo */
+  color: #007bff; /* Color azul para el enlace activo */
+}

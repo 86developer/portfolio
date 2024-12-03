@@ -1,0 +1,26 @@
+<form (ngSubmit)="sendEmail()">
+  <label for="">Nombre</label>
+  <input
+    type="text"
+    placeholder="Nombre"
+    required
+    [(ngModel)]="name"
+    name="name"
+  />
+  <label for="">Email</label>
+  <input
+    type="email"
+    placeholder="Correo"
+    required
+    [(ngModel)]="email"
+    name="email"
+  />
+  <label for="">Mensaje</label>
+  <textarea
+    placeholder="Mensaje"
+    required
+    [(ngModel)]="message"
+    name="message"
+  ></textarea>
+  <button type="submit">Enviar</button>
+</form>
