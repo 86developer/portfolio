@@ -1,0 +1,1 @@
+body{background:#020050;background:radial-gradient(circle,#020050,#080809);font-family:Roboto,sans-serif;margin:0;padding:0;box-sizing:border-box}.container{margin:0 auto;max-width:1200px;padding:0 16px}h1,h2,p{color:#999793}.nav a{font-family:Roboto,sans-serif;color:#999793}:host ::ng-deep .nav a{font-family:Roboto,sans-serif;color:#999793}.active{font-weight:700;color:#007bff}
