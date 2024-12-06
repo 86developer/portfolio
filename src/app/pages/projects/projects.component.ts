@@ -17,6 +17,7 @@ export class ProjectsComponent {
         'Landing page de una Pyme marplatense desarrollada en el marco de Mar del Plata Programa',
       technologies: 'NextJs, Formik, React, Tailwind',
       link: 'https://proyecto37.ecolan.com/#',
+      image: 'lunamora.jpeg',
     },
     {
       title: '6UP Media',
@@ -24,6 +25,7 @@ export class ProjectsComponent {
         'Primer trabajo como desarrollador freelance. Productora de contenidos Audiovisuales, de la ciudad de Mar del Plata. Cuenta con información sobre los servicios que ofrece y además posee una sección de noticias donde se pueden generar comentarios por parte de los visitantes del sitio.',
       technologies: 'Wordpress',
       link: 'https://6upmedia.com/',
+      image: '6upmedia2.jpg',
     },
   ];
 }

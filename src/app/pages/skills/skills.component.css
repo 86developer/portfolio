@@ -1,6 +1,121 @@
+/* Estilo general para el contenedor principal */
+.container {
+  text-align: center;
+  max-width: 1200px; /* Limita el ancho máximo del contenido */
+  margin: 0 auto; /* Centra el contenido */
+  padding: 20px; /* Agrega espacio alrededor del contenido */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para separación visual */
+  border-radius: 8px; /* Bordes redondeados para un diseño moderno */
+}
+
+/* Contenedor general */
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(250px, 1fr)
+  ); /* Ajusta el ancho mínimo de las tarjetas */
   gap: 20px;
   padding: 20px;
+  max-width: 1200px; /* Limita el ancho máximo del contenedor */
+  margin: 0 auto; /* Centra el contenido en la página */
+}
+
+/* Títulos y párrafos */
+h1 {
+  font-size: 2rem;
+  color: #fef08a;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #fef08a;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 1.6; /* Mejora la legibilidad */
+}
+
+/* Tarjetas de habilidades */
+.skill-card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.skill-card h3 {
+  font-size: 1.2rem;
+  color: #fef08a;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.skill-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+  object-fit: contain; /* Asegura que las imágenes/iconos mantengan proporción */
+}
+
+/* Responsividad */
+@media (min-width: 768px) {
+  .skills-container {
+    grid-template-columns: repeat(
+      4,
+      1fr
+    ); /* Fila de 4 columnas en pantallas medianas y grandes */
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-container {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Fila de 2 columnas en pantallas medianas */
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-container {
+    grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    gap: 15px;
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Reduce el tamaño de los títulos */
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
 }

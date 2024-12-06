@@ -1,0 +1,26 @@
+/* Estilo global para toda la página */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Contenedor principal */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que el contenedor ocupe la altura completa */
+}
+
+/* Contenido principal */
+main {
+  flex: 1; /* Hace que el contenido principal crezca para ocupar el espacio disponible */
+}
+
+/* Footer */
+app-footer {
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}

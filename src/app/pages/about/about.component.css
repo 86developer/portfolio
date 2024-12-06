@@ -1,0 +1,52 @@
+/* Contenedor principal */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 3rem auto;
+  padding: 2rem;
+  max-width: 900px;
+  color: #fff; /* Mantiene el mismo color de texto */
+}
+
+/* Estilo del contenido */
+.about-content {
+  padding: 0 1.5rem;
+}
+
+/* Título */
+.about-title {
+  font-size: 2.5rem;
+  color: #6052db; /* Color similar al usado en el home */
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+/* Descripción */
+.about-description p {
+  font-size: 1.125rem;
+  letter-spacing: 0.025rem;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.about-description span {
+  color: #4e42b8; /* Detalles de color para palabras destacadas */
+  font-weight: bold;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 1rem;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-description {
+    font-size: 1rem;
+  }
+}

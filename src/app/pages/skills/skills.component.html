@@ -1,28 +1,33 @@
-<h1>Technical Skills</h1>
+<section class="container">
+  <h1>Habilidades Técnicas</h1>
 
-<h2>Frontend Development</h2>
-<p>
-  - HTML: Semantic markup, accessibility best practices, HTML5 features - CSS:
-  Responsive design, Flexbox, Grid, animations, preprocessors - JavaScript:
-  ES6+, DOM manipulation, async programming, APIs - TypeScript: Types,
-  interfaces, classes, decorators, generics, modules
-</p>
+  <h2>Desarrollo Frontend</h2>
+  <p>
+    - HTML: Marcado semántico, buenas prácticas de accesibilidad,
+    características de HTML5. <br />
+    - CSS: Diseño responsivo, Flexbox, Grid, animaciones, preprocesadores.
+    <br />
+    - JavaScript: ES6+, manipulación del DOM, programación asíncrona, APIs.
+    <br />
+    - TypeScript: Tipos, interfaces, clases, decoradores, genéricos, módulos.
+  </p>
 
-<h2>Frontend Frameworks</h2>
-<p>
-  - React.js: Hooks, Context API, Redux, component lifecycle - Angular:
-  TypeScript, RxJS, services, dependency injection
-</p>
+  <h2>Frameworks de Frontend</h2>
+  <p>
+    - React.js: Hooks, Context API, Redux, ciclo de vida de componentes. <br />
+    - Angular: TypeScript, RxJS, servicios, inyección de dependencias.
+  </p>
 
-<h2>Backend Development</h2>
-<p>- Node.js: Express.js, RESTful APIs, middleware, authentication</p>
+  <h2>Desarrollo Backend</h2>
+  <p>- Node.js: Express.js, APIs RESTful, middleware, autenticación.</p>
 
-<h2>Development Tools</h2>
-
-<p>
-  - Version Control (Git) - Package Managers (npm, yarn) - Build Tools (Webpack,
-  Babel)
-</p>
+  <h2>Herramientas de Desarrollo</h2>
+  <p>
+    - Control de versiones (Git). <br />
+    - Administradores de paquetes (npm, yarn). <br />
+    - Herramientas de construcción (Webpack, Babel).
+  </p>
+</section>
 
 <div class="skills-container">
   <app-skill-card *ngFor="let skill of skills" [skill]="skill"></app-skill-card>

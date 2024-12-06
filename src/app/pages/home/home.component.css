@@ -43,7 +43,7 @@ body {
 .intro-section h1 {
   font-size: 2.5rem;
   margin: 1rem 0;
-  color: #4e42b8;
+  color: #fafafa;
 }
 
 .description {
@@ -52,7 +52,7 @@ body {
 }
 
 .description span {
-  color: #4e42b8;
+  color: #facc15;
   font-weight: bold;
 }
 
@@ -64,7 +64,7 @@ body {
 
 .btn-primary {
   background-color: #4e42b8;
-  color: #1e1e2f;
+  color: #f0dfdf;
   padding: 0.8rem 1.2rem;
   border: none;
   border-radius: 8px;
@@ -90,13 +90,13 @@ body {
 
 .btn-secondary:hover {
   background-color: #4e42b8;
-  color: #1e1e2f;
+  color: #f0dfdf;
 }
 
 /* Responsivo */
 @media (max-width: 768px) {
   .home-container {
-    padding: 1rem;
+    padding: 1.25rem;
   }
 
   .intro-section h1 {
@@ -107,6 +107,5 @@ body {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    object-fit: cover;
   }
 }

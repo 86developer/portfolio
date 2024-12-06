@@ -1,36 +1,93 @@
 /* Estilos para la barra de navegación */
 .nav {
-  display: flex; /* Usamos flexbox para centrar los elementos */
-  justify-content: center; /* Centra los elementos horizontalmente */
-  align-items: center; /* Centra los elementos verticalmente */
-  padding: 10px 0; /* Espaciado en la parte superior e inferior */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  position: relative;
 }
 
 nav ul {
-  list-style-type: none; /* Elimina los puntos de lista */
+  list-style-type: none;
   padding: 0;
   margin: 0;
-  display: flex; /* Utilizamos flexbox para que los elementos de lista estén en línea */
+  display: flex;
+  gap: 20px;
+  transition: max-height 0.3s ease;
+  z-index: 2;
 }
 
 nav ul li {
-  margin: 0 20px; /* Espaciado entre los elementos de la lista */
+  margin: 0;
 }
 
 nav a {
-  text-decoration: none; /* Elimina el subrayado */
-  color: rgb(153, 151, 147); /* Color del texto */
+  text-decoration: none;
+  color: rgb(153, 151, 147);
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 16px; /* Tamaño de la fuente */
-  transition: color 0.3s ease; /* Transición para el color al pasar el ratón */
+  font-size: 16px;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #007bff; /* Cambia el color cuando se pasa el ratón */
+  color: #007bff;
 }
 
 .active {
-  font-weight: bold; /* Negrita para el enlace activo */
-  color: #007bff; /* Color azul para el enlace activo */
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Estilos para el botón de hamburguesa */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #19287eb9;
+  cursor: pointer;
+}
+
+/* Menú desplegable para dispositivos móviles */
+nav ul.active {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  .menu-toggle:hover {
+    color: #007bff9a;
+    font-weight: bold;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    background-color: rgba(25, 40, 126, 0.8); /* Fondo semi-transparente */
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Difuminado del fondo */
+    -webkit-backdrop-filter: blur(10px); /* Compatibilidad con Safari */
+    z-index: 1000; /* Asegura que esté sobre otros elementos */
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  nav a {
+    color: #ffffff;
+  }
 }

@@ -7,5 +7,5 @@ import { Component, Input } from '@angular/core';
   standalone: true,
 })
 export class SkillCardComponent {
-  @Input() skill!: { name: string; level: string };
+  @Input() skill!: { name: string; level: string; icon: string };
 }

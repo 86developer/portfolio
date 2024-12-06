@@ -11,13 +11,33 @@ import { SkillCardComponent } from '../../components/skill-card/skill-card.compo
 })
 export class SkillsComponent {
   skills = [
-    { name: 'HTML', level: 'Avanzado' },
-    { name: 'CSS', level: 'Avanzado' },
-    { name: 'Tailwind', level: 'Intermedio' },
-    { name: 'JavaScript', level: 'Avanzado' },
-    { name: 'Angular', level: 'Intermedio' },
-    { name: 'Next.js', level: 'Intermedio' },
-    { name: 'Git', level: 'Intermedio' },
-    { name: 'Node.js', level: 'Intermedio' },
+    { name: '', level: 'Avanzado', icon: 'html-icon.png' },
+    { name: '', level: 'Avanzado', icon: 'css-icon.png' },
+    {
+      name: '',
+      level: 'Intermedio',
+      icon: 'tailwind-icon.svg',
+    },
+    {
+      name: '',
+      level: 'Avanzado',
+      icon: 'javascript-icon.png',
+    },
+    {
+      name: '',
+      level: 'Intermedio',
+      icon: 'angular-icon.png',
+    },
+    {
+      name: '',
+      level: 'Intermedio',
+      icon: 'nextjs-icon.png',
+    },
+    { name: '', level: 'Intermedio', icon: 'git-icon.png' },
+    {
+      name: '',
+      level: 'Intermedio',
+      icon: 'nodejs-icon.svg',
+    },
   ];
 }

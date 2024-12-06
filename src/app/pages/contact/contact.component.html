@@ -1,26 +1,45 @@
-<form (ngSubmit)="sendEmail()">
-  <label for="">Nombre</label>
-  <input
-    type="text"
-    placeholder="Nombre"
-    required
-    [(ngModel)]="name"
-    name="name"
-  />
-  <label for="">Email</label>
-  <input
-    type="email"
-    placeholder="Correo"
-    required
-    [(ngModel)]="email"
-    name="email"
-  />
-  <label for="">Mensaje</label>
-  <textarea
-    placeholder="Mensaje"
-    required
-    [(ngModel)]="message"
-    name="message"
-  ></textarea>
-  <button type="submit">Enviar</button>
-</form>
+<section class="contact-form-container">
+  <h1>Contacto</h1>
+  <form class="contact-form" (ngSubmit)="sendEmail()">
+    <div class="form-group">
+      <label for="name">Nombre</label>
+      <input
+        type="text"
+        id="name"
+        class="form-input"
+        placeholder="Nombre"
+        required
+        [(ngModel)]="name"
+        name="name"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        class="form-input"
+        placeholder="Correo"
+        required
+        [(ngModel)]="email"
+        name="email"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="message">Mensaje</label>
+      <textarea
+        id="message"
+        class="form-textarea"
+        placeholder="Escribe tu mensaje aquí..."
+        required
+        [(ngModel)]="message"
+        name="message"
+      ></textarea>
+    </div>
+    <div class="form-button-container">
+      <button type="submit" class="form-button">Enviar</button>
+    </div>
+  </form>
+</section>
