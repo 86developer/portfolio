@@ -13,9 +13,9 @@ body {
   box-sizing: border-box;
 }
 .container {
-  margin: 0 auto; /* centra el contenido */
-  max-width: 1200px; /* ancho máximo para escritorio */
-  padding: 0 16px; /* márgenes laterales */
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 16px;
 }
 h1,
 h2,
