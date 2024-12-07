@@ -27,7 +27,7 @@
 
 .footer-link:hover,
 .footer-icon:hover {
-  color: #007bff; /* Cambio de color al pasar el cursor */
+  color: #007bff;
 }
 
 .icon {
@@ -37,7 +37,7 @@
 }
 
 .footer-icon:hover .icon {
-  transform: scale(1.1); /* Efecto de zoom en los íconos al pasar el cursor */
+  transform: scale(1.1);
 }
 
 /* Estilos específicos para móvil */

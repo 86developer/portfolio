@@ -34,5 +34,5 @@
 }
 
 .skill-card:hover .skill-icon {
-  transform: scale(1.1); /* Efecto zoom al hacer hover */
+  transform: scale(1.1);
 }

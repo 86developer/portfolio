@@ -6,16 +6,16 @@ a {
 }
 /* Estilos generales para la tarjeta de proyecto */
 .proyect-card {
-  display: flex; /* Usamos flexbox para la estructura */
-  flex-direction: row; /* Coloca la imagen a la izquierda y la descripción a la derecha en pantallas grandes */
-  gap: 20px; /* Espacio entre la imagen y la descripción */
-  align-items: start; /* Alinea los elementos al inicio */
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: start;
   background-color: #4e42b84f;
   padding: 1rem;
   margin-top: 3rem;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: left; /* Alineación del texto a la izquierda en pantallas grandes */
+  text-align: left;
 }
 
 /* Contenedor para la imagen y el enlace */
@@ -36,7 +36,7 @@ a {
 
 /* Enlace para ver el proyecto */
 .proyect-card-link {
-  margin-top: 10px; /* Espacio entre la imagen y el enlace */
+  margin-top: 10px;
   color: #4e42b8;
   font-weight: bold;
   text-decoration: none;
@@ -58,49 +58,49 @@ a {
 .description {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centra verticalmente el texto */
+  justify-content: center;
   gap: 10px;
-  flex-grow: 1; /* Hace que ocupe el espacio restante */
+  flex-grow: 1;
 }
 
 /* Ajustes para pantallas pequeñas (menos de 768px) */
 @media (max-width: 768px) {
   .proyect-card {
-    flex-direction: column; /* Organiza la imagen y la descripción en columna */
-    text-align: center; /* Centra el texto en pantallas pequeñas */
+    flex-direction: column;
+    text-align: center;
   }
 
   .proyect-card-image-container {
-    align-items: center; /* Centra la imagen y el botón */
+    align-items: center;
   }
 
   .proyect-card-image {
-    width: 100%; /* La imagen ocupa todo el ancho disponible */
-    max-width: 100%; /* Limita el ancho máximo */
+    width: 100%;
+    max-width: 100%;
   }
 
   .description {
-    text-align: center; /* Centra el texto de la descripción */
-    width: 100%; /* Hace que ocupe todo el ancho disponible */
+    text-align: center;
+    width: 100%;
   }
 }
 
 /* Ajustes para pantallas más pequeñas (menos de 480px) */
 @media (max-width: 480px) {
   .proyect-card-image {
-    width: 100%; /* Hace que la imagen ocupe todo el ancho disponible */
-    height: auto; /* Ajusta la altura automáticamente */
+    width: 100%;
+    height: auto;
   }
 
   .proyect-card h3 {
-    font-size: 1.5rem; /* Ajusta el tamaño del título */
+    font-size: 1.5rem;
   }
 
   .proyect-card p {
-    font-size: 0.9rem; /* Ajusta el tamaño del texto */
+    font-size: 0.9rem;
   }
 
   .proyect-card-link {
-    padding: 0.4rem 0.8rem; /* Ajusta el tamaño del enlace */
+    padding: 0.4rem 0.8rem;
   }
 }
