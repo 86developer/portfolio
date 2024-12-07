@@ -65,6 +65,7 @@ body {
 .btn-primary {
   background-color: #4e42b8;
   color: #f0dfdf;
+  text-decoration: none;
   padding: 0.8rem 1.2rem;
   border: none;
   border-radius: 8px;
@@ -80,6 +81,7 @@ body {
 .btn-secondary {
   background-color: transparent;
   color: #4e42b8;
+  text-decoration: none;
   border: 2px solid #4e42b8;
   padding: 0.8rem 1.2rem;
   border-radius: 8px;
