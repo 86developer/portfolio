@@ -1,6 +1,7 @@
 <section class="contact-form-container">
   <h1>Contacto</h1>
-  <form class="contact-form" (ngSubmit)="sendEmail()">
+  <form class="contact-form" (ngSubmit)="sendEmail()" #contactForm="ngForm">
+    <!-- Campo nombre -->
     <div class="form-group">
       <label for="name">Nombre</label>
       <input
@@ -11,8 +12,15 @@
         required
         [(ngModel)]="name"
         name="name"
+        #nameField="ngModel"
       />
+      <!-- Mensaje de error para el campo nombre -->
+      <div *ngIf="nameField.invalid && nameField.touched" class="error">
+        El nombre es obligatorio.
+      </div>
     </div>
+
+    <!-- Campo Correo -->
 
     <div class="form-group">
       <label for="email">Email</label>
@@ -22,11 +30,22 @@
         class="form-input"
         placeholder="Correo"
         required
+        pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
         [(ngModel)]="email"
         name="email"
+        #emailField="ngModel"
       />
+
+      <!-- Mensajes de error para el campo correo -->
+      <div *ngIf="emailField.invalid && emailField.touched" class="error">
+        <div *ngIf="emailField.errors?.['required']">
+          El correo es obligatorio.
+        </div>
+        <div *ngIf="emailField.errors?.['email']">El correo no es válido.</div>
+      </div>
     </div>
 
+    <!-- Campo Mensaje -->
     <div class="form-group">
       <label for="message">Mensaje</label>
       <textarea
@@ -34,12 +53,30 @@
         class="form-textarea"
         placeholder="Escribe tu mensaje aquí..."
         required
+        minlength="50"
         [(ngModel)]="message"
         name="message"
+        #messageField="ngModel"
       ></textarea>
+      <!-- Mensaje de error para el campo mensaje -->
+      <div *ngIf="messageField.invalid && messageField.touched" class="error">
+        <div *ngIf="messageField.errors?.['required']">
+          El mensaje es obligatorio.
+        </div>
+        <div *ngIf="messageField.errors?.['minlength']">
+          El mensaje debe tener al menos 50 caracteres
+        </div>
+      </div>
     </div>
+    <!-- Boton Enviar -->
     <div class="form-button-container">
-      <button type="submit" class="form-button">Enviar</button>
+      <button
+        type="submit"
+        class="form-button"
+        [disabled]="contactForm.invalid"
+      >
+        Enviar
+      </button>
     </div>
   </form>
 </section>
