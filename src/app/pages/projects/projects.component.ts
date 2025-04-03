@@ -14,7 +14,7 @@ export class ProjectsComponent {
     {
       title: 'Luna Mora',
       description:
-        'Landing page de una Pyme marplatense desarrollada en el marco de Mar del Plata Programa',
+        'Landing page de una Pyme marplatense desarrollada en el marco de Mar del Plata Programa. El sitio cuenta con un formulario de contacto y una sección de productos donde se pueden ver los productos que ofrece la empresa. El sitio es responsivo y se adapta a diferentes dispositivos.',
       technologies: 'NextJs, Formik, React, Tailwind',
       link: 'https://proyecto37.ecolan.com/#',
       image: 'lunamora.jpeg',
