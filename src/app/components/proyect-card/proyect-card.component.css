@@ -1,9 +1,16 @@
-h3,
-p,
-a {
-  font-family: "Roboto", sans-serif;
-  color: rgb(153, 151, 147);
+h3 {
+  color: #fef08a;
 }
+p {
+  color: #fafafa;
+}
+/* p {
+  color: rgb(153, 151, 147);
+} */
+/* a {
+  font-family: "Roboto", sans-serif;
+  color: #fafafa;
+} */
 /* Estilos generales para la tarjeta de proyecto */
 .proyect-card {
   display: flex;
@@ -11,7 +18,7 @@ a {
   gap: 20px;
   align-items: start;
   background-color: #4e42b84f;
-  padding: 1rem;
+  padding: 2rem;
   margin-top: 3rem;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -37,12 +44,12 @@ a {
 /* Enlace para ver el proyecto */
 .proyect-card-link {
   margin-top: 10px;
-  color: #4e42b8;
+  color: #fafafa;
   font-weight: bold;
   text-decoration: none;
   text-align: center;
   padding: 0.5rem 1rem;
-  border: 2px solid #4e42b8;
+  border: 2px solid #fafafa;
   border-radius: 8px;
   transition: all 0.3s;
 }
@@ -61,6 +68,18 @@ a {
   justify-content: center;
   gap: 10px;
   flex-grow: 1;
+}
+
+/* Contenedor para tecnologias y enlace */
+.tech-link-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.tech-link-container p {
+  margin: 0;
 }
 
 /* Ajustes para pantallas pequeñas (menos de 768px) */
@@ -82,6 +101,19 @@ a {
   .description {
     text-align: center;
     width: 100%;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+    margin: 0;
+  }
+
+  .description h3 {
+    margin: 0;
+  }
+
+  .tech-link-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
 }
 
