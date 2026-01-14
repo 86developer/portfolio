@@ -1,22 +1,38 @@
 import { Routes } from '@angular/router';
-import { AboutComponent } from './pages/about/about.component';
-import { HomeComponent } from './pages/home/home.component';
-import { ProjectsComponent } from './pages/projects/projects.component';
-import { SkillsComponent } from './pages/skills/skills.component';
-import { ContactComponent } from './pages/contact/contact.component';
-import { RouterModule } from '@angular/router';
-import { NgModule } from '@angular/core';
 
 export const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'projects', component: ProjectsComponent },
-  { path: 'skills', component: SkillsComponent },
-  { path: 'contact', component: ContactComponent },
+  {
+    path: '',
+    loadComponent: () =>
+      import('./pages/home/home.component').then((m) => m.HomeComponent),
+    title: 'Inicio',
+  },
+  {
+    path: 'about',
+    loadComponent: () =>
+      import('./pages/about/about.component').then((m) => m.AboutComponent),
+    title: 'Sobre mí',
+  },
+  {
+    path: 'projects',
+    loadComponent: () =>
+      import('./pages/projects/projects.component').then(
+        (m) => m.ProjectsComponent
+      ),
+    title: 'Proyectos',
+  },
+  {
+    path: 'skills',
+    loadComponent: () =>
+      import('./pages/skills/skills.component').then((m) => m.SkillsComponent),
+    title: 'Habilidades',
+  },
+  {
+    path: 'contact',
+    loadComponent: () =>
+      import('./pages/contact/contact.component').then(
+        (m) => m.ContactComponent
+      ),
+    title: 'Contacto',
+  },
 ];
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule],
-})
-export class AppRoutingModule {}

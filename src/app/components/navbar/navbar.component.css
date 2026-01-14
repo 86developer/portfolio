@@ -5,6 +5,9 @@
   align-items: center;
   padding: 10px 0;
   position: relative;
+  background-color: rgba(25, 40, 126, 0.1);
+  backdrop-filter: blur(8px);
+  z-index: 10000;
 }
 
 nav ul {
@@ -15,6 +18,7 @@ nav ul {
   gap: 20px;
   transition: max-height 0.3s ease;
   z-index: 2;
+  align-items: center;
 }
 
 nav ul li {
@@ -23,7 +27,7 @@ nav ul li {
 
 nav a {
   text-decoration: none;
-  color: rgb(153, 151, 147);
+  color: #fafafa;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -31,12 +35,12 @@ nav a {
 }
 
 nav a:hover {
-  color: #007bff;
+  color: #4e42b8;
 }
 
 .active {
   font-weight: bold;
-  color: #007bff;
+  color: #4e42b8 !important;
 }
 
 /* Estilos para el botón de hamburguesa */
@@ -45,9 +49,11 @@ nav a:hover {
   font-size: 24px;
   background: none;
   border: none;
-  color: #19287eb9;
+  color: var(--dark-primary);
   cursor: pointer;
 }
+
+/* Theme toggle removed */
 
 /* Menú desplegable para dispositivos móviles */
 nav ul.active {
@@ -60,23 +66,21 @@ nav ul.active {
     display: block;
   }
   .menu-toggle:hover {
-    color: #007bff9a;
-    font-weight: bold;
+    color: #fef08a;
   }
 
   nav ul {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 50px;
+    top: 100%; /* Se posiciona justo debajo del botón */
     left: 0;
-    right: 0;
-    background-color: rgba(25, 40, 126, 0.8); /* Fondo semi-transparente */
-    padding: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px); /* Difuminado del fondo */
-    -webkit-backdrop-filter: blur(10px); /* Compatibilidad con Safari */
-    z-index: 1000; /* Asegura que esté sobre otros elementos */
+    width: 100%; /* Ocupa todo el ancho */
+    background-color: #0f172a; /* USA UN COLOR SÓLIDO (oscuro como el de tu fondo) */
+    padding: 20px 0;
+    z-index: 99999 !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    /* Quitamos el backdrop-filter si quieres que sea sólido como antes */
   }
 
   nav ul.active {
@@ -84,10 +88,15 @@ nav ul.active {
   }
 
   nav ul li {
-    margin: 10px 0;
+    width: 100%;
+    margin: 0;
+    text-align: center;
   }
 
   nav a {
-    color: #ffffff;
+    color: #fafafa;
+    display: block;
+    padding: 8px;
+
   }
 }
