@@ -111,4 +111,8 @@ body {
     height: 150px;
     border-radius: 50%;
   }
+
+  .status {
+  right: -55px;
+}
 }
