@@ -1,0 +1,59 @@
+.projects {
+  padding-bottom: 2rem;
+}
+
+.project-highlight {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1rem;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  color: var(--accent-color);
+  margin-bottom: 0;
+}
+
+.project-badge {
+  background-color: var(--accent-color);
+  color: var(--bg-secondary);
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+[data-theme='dark'] .project-badge {
+  border-radius: 0;
+  background-color: transparent;
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+.project-description {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.project-features {
+  list-style-type: square;
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.project-features li strong {
+  color: var(--text-primary);
+}
