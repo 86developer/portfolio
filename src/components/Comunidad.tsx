@@ -22,7 +22,7 @@ const Comunidad = () => {
 
       <div className="project-highlight card">
         <div className="project-header">
-          <h3 className="project-title">Ponente en Educación Tecnológica</h3>
+          <h3 className="project-title">Educación Tecnológica - Ponente</h3>
           <span className="project-badge">Próximamente / Coming Soon</span>
         </div>
         <p className="project-description">
