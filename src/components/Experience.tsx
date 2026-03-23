@@ -52,35 +52,6 @@ const Experience = () => {
           </div>
         ))}
       </div>
-
-      <h2 className="section-title" style={{ marginTop: '3rem' }}>Comunidad y Divulgación / Community & Outreach</h2>
-      <div className="timeline">
-        <div className="timeline-item">
-          <div className="timeline-marker"></div>
-          <div className="timeline-content card">
-            <h3 className="timeline-title">Divulgador en Tecnologías Emergentes</h3>
-            <div className="timeline-subtitle">
-              <span className="company">ATICMA (Asociación de Tecnologías de la Información y la Comunicación de Mar del Plata)</span> | <span className="period">Próximamente</span>
-            </div>
-            <ul className="timeline-details">
-              <li>Actualmente en proceso de preparación y propuesta de charlas técnicas y estratégicas orientadas a acercar el impacto de la Computación Cuántica al sector empresarial regional. El enfoque está en casos de estudio reales de optimización logística, como el modelo aplicado al tráfico de MDQ, para demostrar la viabilidad y rentabilidad de estas soluciones en el ecosistema IT regional actual.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="timeline-item">
-          <div className="timeline-marker"></div>
-          <div className="timeline-content card">
-            <h3 className="timeline-title">Ponente en Educación Tecnológica</h3>
-            <div className="timeline-subtitle">
-              <span className="company">Institución Educativa (Nivel Secundario)</span> | <span className="period">Próximamente</span>
-            </div>
-            <ul className="timeline-details">
-              <li>Diseño e impartición próxima de una charla introductoria para estudiantes de nivel medio. El objetivo es inspirar y educar a la próxima generación sobre las oportunidades en el sector IT y la revolución de las tecnologías cuánticas, fomentando el interés en la ciencia de datos avanzada y el desarrollo de sistemas de alta complejidad.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
     </section>
   );
 };

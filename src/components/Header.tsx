@@ -16,6 +16,7 @@ const Header = ({ isDarkMode, toggleTheme }: HeaderProps) => {
           <a href="#about">Sobre Mí</a>
           <a href="#experience">Experiencia</a>
           <a href="#projects">Proyectos</a>
+          <a href="#comunidad">Comunidad</a>
           <a href="#skills">Habilidades</a>
         </nav>
         <button 
